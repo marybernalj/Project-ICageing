@@ -94,5 +94,11 @@ The CODE/ML-DL Implementations (Study 2 - Prediction Models) directory contains 
    - Use `splime analysis.ipynb` to generate local explanations of predictions made by the LSTM model.
    - The `random forest model characteristics.ipynb` notebook also provides global feature importance across domains.
 
+## Ethics and Usage
+
+- All data were derived from the Health and Retirement Study (HRS).
+- The use of these files complies with ethical guidelines for secondary data analysis.
+- Raw data access is managed by the University of Michigan.
+
 # Conclusion
 This repository contains all the necessary data, codes and results to support the study of intrinsic capacity and its evolution with age according to the ICOPE framework. You can use the provided SPSS syntax files to perform the analysis for different IC domains and assess how lifestyle and socio-demographic factors influence the ageing trajectory. The code for machine learning and deep learning models to predict IC trajectories is also included.
