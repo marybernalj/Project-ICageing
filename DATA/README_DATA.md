@@ -15,11 +15,11 @@ This folder contains unprocessed datasets derived from the Health and Retirement
 
 ### `Data set - Long format - All variables except locomotion.sav`
 
-* Data set - Long format - All variables except locomotion.sav: This dataset contains all the variables used in the analysis, excluding locomotion. It follows the long format, where each row represents a single individual’s data for a particular time point.
+* This dataset contains all the variables used in the analysis, excluding locomotion. It follows the long format, where each row represents a single individual’s data for a particular time point.
 
 ### `Data set - Long format - Locomotion.sav`
 
-* Data set - Long format - Locomotion.sav: This dataset contains locomotion-related data, which is reported every four years as opposed to biennially like other variables.
+* This dataset contains locomotion-related data, which is reported every four years as opposed to biennially like other variables.
 
 These two datasets are used together to construct both static and sequential representations of IC and predictors.
 
