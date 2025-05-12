@@ -9,15 +9,10 @@ This repository contains data, scripts, and results from two complementary studi
 The goal is to provide a comprehensive understanding of both the estimation and prediction of IC, offering insights into the progression and modifiable determinants of functional ageing.
 
 # Repository Structure
-### 1. `data/`
-
-
 # 1. Data Folder
 - `raw/`: Contains raw CSV files and SPSS `.sav` datasets from HRS used in both studies.
 - `processed/`: Datasets preprocessed for prediction models (including transformed, encoded, and scaled data).
 - `README_data.md`: Description of each dataset, processing pipeline, and versioning.
-* Data set - Long format - All variables except locomotion.sav: This dataset contains all the variables used in the analysis, excluding locomotion. It follows the long format, where each row represents a single individual’s data for a particular time point.
-* Data set - Long format - Locomotion.sav: This dataset contains locomotion-related data, which is reported every four years as opposed to biennially like other variables.
 # 2. Code Folder
 * Syntax 01 - Sensoriality.sps: This SPSS syntax file analyzes the sensory domain of intrinsic capacity, including hearing and vision impairments.
 * Syntax 02 - Vitality.sps: This file focuses on the vitality domain, assessing energy balance, nutrition, and mobility.
