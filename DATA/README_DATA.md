@@ -63,7 +63,7 @@ All datasets used for prediction maintain temporal consistency across three time
 ## Notes
 
 - All data is pseudonymized and processed following ethical guidelines for secondary analysis of the HRS.
-- Any transformations (scaling, encoding, imputation) are applied consistently across all experiments using dedicated scripts in `data_preprocessing`.
+- Any transformations (scaling, encoding, imputation) are applied consistently across all experiments using dedicated scripts in `Data Prepare Model CI`.
 
 ---
 
