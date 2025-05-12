@@ -1,10 +1,21 @@
 # Intrinsic Capacity Estimation and Ageing Study
 
 # Overview
-This repository contains the dataset, the SPSS syntax files and the results of the experiments conducted as part of the paper "Estimating Intrinsic Capacity and Unveiling Ageing Trajectories". The data come from the Health and Retirement Study (HRS), which provides valuable longitudinal data on ageing, health and socio-demographic factors. The aim of this study is to quantify intrinsic capacity (IC) and understand how different lifestyle factors influence it over time, particularly through a multidimensional approach guided by the ICOPE guidelines.
+This repository contains data, scripts, and results from two complementary studies focused on intrinsic capacity (IC) and ageing trajectories, both based on the Health and Retirement Study (HRS), which provides valuable longitudinal data on ageing, health and socio-demographic factors.:
+
+- **Study 1:** This study focused on computing IC scores based on ICOPE guidelines and analyzing their evolution using longitudinal mixed models in SPSS. The aim of this study is to quantify intrinsic capacity (IC) and understand how different lifestyle factors influence it over time, particularly through a multidimensional approach guided by the ICOPE guidelines.
+- **Study 2:** This study introduces machine learning and deep learning models (including LSTM and traditional algorithms like SVM, RF, and MLP) for predicting IC domains using lifestyle sequences and personal attributes.
+
+The goal is to provide a comprehensive understanding of both the estimation and prediction of IC, offering insights into the progression and modifiable determinants of functional ageing.
 
 # Repository Structure
+### 1. `data/`
+
+
 # 1. Data Folder
+- `raw/`: Contains raw CSV files and SPSS `.sav` datasets from HRS used in both studies.
+- `processed/`: Datasets preprocessed for prediction models (including transformed, encoded, and scaled data).
+- `README_data.md`: Description of each dataset, processing pipeline, and versioning.
 * Data set - Long format - All variables except locomotion.sav: This dataset contains all the variables used in the analysis, excluding locomotion. It follows the long format, where each row represents a single individual’s data for a particular time point.
 * Data set - Long format - Locomotion.sav: This dataset contains locomotion-related data, which is reported every four years as opposed to biennially like other variables.
 # 2. Code Folder
