@@ -91,8 +91,8 @@ The CODE/ML-DL Implementations (Study 2 - Prediction Models) directory contains 
      - Evaluates MAE and other metrics per IC domain.
 
 5. **Interpret model predictions**
-   - Use `SPLIME ANALYSIS.ipynb` to generate local explanations of predictions made by the LSTM model.
-   - The `RANDOM FOREST MODEL CHARACTERISTICS.ipynb` notebook also provides global feature importance across domains.
+   - Use `splime analysis.ipynb` to generate local explanations of predictions made by the LSTM model.
+   - The `random forest model characteristics.ipynb` notebook also provides global feature importance across domains.
 
 # Conclusion
 This repository contains all the necessary data, codes and results to support the study of intrinsic capacity and its evolution with age according to the ICOPE framework. You can use the provided SPSS syntax files to perform the analysis for different IC domains and assess how lifestyle and socio-demographic factors influence the ageing trajectory. The code for machine learning and deep learning models to predict IC trajectories is also included.
