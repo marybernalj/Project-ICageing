@@ -57,15 +57,42 @@ The goal is to provide a comprehensive understanding of both the estimation and 
 The Locomotion.sav data set is treated separately due to the different frequency with which physical measurements are recorded. While most of the health data in the HRS is collected every two years, the physical activity data is only reported every four years. This distinction is important for accurately modeling and analyzing the progression of intrinsic capacity over time
 
 ### Study 2 (Prediction - Python)
-1. Preprocess data:
-   ```bash
-   python data_preprocessing/data_transform_lstm.py
-2. Train Model
-   python models/lstm_multitask.py
-   python models/svm_rf_models.py
-3. Evaluate Model
-   python evaluation/bootstrap_mae.py
-    python evaluation/lime_analysis.py
+The CODE/ML-DL Implementations (Study 2 - Prediction Models) directory contains Jupyter notebooks implementing several machine learning and deep learning models for predicting intrinsic capacity domains. Each notebook corresponds to a specific modeling technique.
+
+1. **Set up your environment**
+   - Use a Python environment with the required libraries. Recommended: Python ≥ 3.8, with JupyterLab or Google Colab.
+   - Required packages include:
+     - `pandas`, `numpy`, `scikit-learn`, `tensorflow`, `matplotlib`, `lime`.
+  
+2. **Prepare the dataset**
+   - Ensure the data file `DATOS_OBSERVACION_VAR_NOTNULL2010-2022_TRANSFORM_ENCODED.csv` is placed in the `DATA/` directory.
+   - All notebooks automatically reference this preprocessed file.
+
+3. **Select the notebook corresponding to the model**
+   - Navigate to the folder:
+     `CODE/ML-DL Implementations (Study 2 - Prediction Models)`
+   - Available notebooks:
+
+     | Model Type                     | Notebook File                        |
+     |--------------------------------|--------------------------------------|
+     | LSTM Multitask                 | `LSTM_MULTITASK.ipynb`         |
+     | LSTM Single-task               | `LSTM_SINGLE_TASK.ipynb`        |
+     | Random Forest (RF)            | `RF_MULTITASK.ipynb`                     |
+     | Support Vector Machine (SVM)  | `SVM_MULTITASK.ipynb`                    |
+     | Multilayer Perceptron (MLP)   | `MLP_MULTITASK.ipynb`                    |
+   
+
+4. **Open and run the notebook**
+   - You can use Jupyter Notebook, JupyterLab, or Google Colab.
+   - Each notebook:
+     - Loads and preprocesses the data.
+     - Constructs input sequences.
+     - Trains the model.
+     - Evaluates MAE and other metrics per IC domain.
+
+5. **Interpret model predictions**
+   - Use `SPLIME ANALYSIS.ipynb` to generate local explanations of predictions made by the LSTM model.
+   - The `RANDOM FOREST MODEL CHARACTERISTICS.ipynb` notebook also provides global feature importance across domains.
 
 # Conclusion
 This repository contains all the necessary data, codes and results to support the study of intrinsic capacity and its evolution with age according to the ICOPE framework. You can use the provided SPSS syntax files to perform the analysis for different IC domains and assess how lifestyle and socio-demographic factors influence the ageing trajectory. The code for machine learning and deep learning models to predict IC trajectories is also included.
